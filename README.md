@@ -4,7 +4,7 @@ The aim is to create this:
 ![CSS is !important](screenshot.jpg)
 See high-res screenshot - https://raw.githubusercontent.com/BennyHudson/vodafone-css-benchmarking/master/screenshot-high-res.png
 ## The Rules
-There's really only one rule to this: *You may not edit the HTML*
+There's really only one rule to this: You may not edit the HTML
 You can add classes, but the structure of the HTML must not change.
 Actually there is another rule... Everything you do must be done in CSS. No javascript should be used aside from what's there.
 ## Running the repo
