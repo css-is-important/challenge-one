@@ -27,7 +27,7 @@ Actually there is another rule... Everything you do must be done in CSS. No java
 - Spacing values are not provided. You may choose a suitable value, as long as it is consistent across the page - don't worry about pixel-perfection.
 ## Helpers
 - Font Awesome Pro is included in this project
-- There are some predefined mixins that may come in handy. These can be found in `stylesheets/dev/mixins.scss` along with instructions on input & output
+- There are some predefined mixins that may come in handy. These can be found in `stylesheets/dev/mixins.scss`
 - The default browser styles have been disabled with `stylesheets/dev/reset.scss`
 - _Very_ basic styles have been added to `stylesheets/dev/global.scss` to get you started
 ## Browsers, Devices & Extras
