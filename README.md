@@ -15,6 +15,12 @@ Actually there is another rule... Everything you do must be done in CSS. No java
 - Run `npm install`
 - Run `grunt`
 - The page will run at `localhost:9000`
+## Participating in the challenge
+- Create a new `your-name` branch from `master`
+- Follow https://github.com/BennyHudson on GitHub
+- You will be added as a contributor to `css-is-important`
+- Write your best CSS
+- Push your branch
 ## Things to note
 - There are a couple of `id`s in the HTML. These are purely to make the simple jQuery tabs, carousels and accordion function straight out of the box.
 - Colours are predefined and are available inside `stylesheets/dev/colours.scss`
