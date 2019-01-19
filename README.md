@@ -1,7 +1,9 @@
 # CSS is !important
 A benchmarking test to test your CSS skills.
 The aim is to create this:
+
 ![CSS is !important](screenshot.jpg)
+
 See high-res screenshot - https://raw.githubusercontent.com/BennyHudson/css-is-important/master/screenshot-high-res.png
 ## The Rules
 There's really only one rule to this: *You may not edit the HTML*
