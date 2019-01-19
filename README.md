@@ -23,6 +23,7 @@ Actually there is another rule... Everything you do must be done in CSS. No java
 - The image next to the italic text (on the red gradient background) has an inner and outer shadow
 - The red gradient should run from the primary color (`$red`) down to the secondary (`$orange`)
 - Spacing values are not provided. You may choose a suitable value, as long as it is consistent across the page - don't worry about pixel-perfection.
+- Treat this as a real, content-driven website - don't make things too specific!
 ## Helpers
 - Font Awesome Pro is included in this project
 - There are some predefined mixins that may come in handy. These can be found in `stylesheets/dev/mixins.scss` along with instructions on input & output
