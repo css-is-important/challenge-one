@@ -1,4 +1,4 @@
-# CSS is !important
+# CSS is !important - Challenge One: Benchmarking
 A benchmarking test to test your CSS skills.
 The aim is to create this:
 
