@@ -40,6 +40,7 @@ Actually there is another rule... Everything you do must be done in CSS. No java
 - There are some predefined mixins that may come in handy. These can be found in `stylesheets/dev/mixins.scss`
 - The default browser styles have been disabled with `stylesheets/dev/reset.scss`
 - _Very_ basic styles have been added to `stylesheets/dev/global.scss` to get you started
+- A basic build of Modernizr has been added for cross browser testing. If you need more, create your own at https://modernizr.com/
 ## Browsers, Devices & Extras
 - Your code should work consistently across all modern browsers
 - You should give consideration to responsive design. Desktop first media queries are included inside `stylesheets/dev/media.scss`.
