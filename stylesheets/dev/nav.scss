@@ -1,0 +1,41 @@
+nav {
+  header & {
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+
+    @media #{$phone} {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      align-items: stretch;
+
+      li {
+        float: left;
+        display: flex;
+        align-items: center;
+        @include rems(padding, 1, 1, 0.5);
+        border-bottom: 5px solid #fff;
+        border-bottom: 0.5rem solid #fff;
+        transition: 0.4s all ease;
+
+        a {
+          display: block;
+          color: $body;
+          text-decoration: none;
+        }
+
+        &.active, &:hover {
+          border-bottom: 5px solid $primary;
+          border-bottom: 0.5rem solid $primary;
+
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

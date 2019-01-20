@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media #{$phone} {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  label {
+    color: $primary;
+    font-weight: 700;
+    @include rems(margin-right, 2);
+    flex-shrink: 0;
+    @media #{$phone} {
+      @include rems(margin, 0, 0, 1);
+    }
+  }
+
+  input[type='text'] {
+    border: 1px solid #ccc;
+    @include border-radius(5px);
+    display: block;
+    @include rems(padding, 1, 2);
+    width: 100%;
+    @include rems(margin-right, 2);
+    font-family: 'Raleway', sans-serif;
+    @include font-size(1.8, 2.4);
+    color: $body;
+
+    @media #{$phone} {
+      @include rems(margin, 0, 0, 1);
+    }
+
+    &:focus {
+      border: 1px solid $primary;
+    }
+  }
+
+  input[type='submit'] {
+    @include rems(padding, 1, 4);
+    font-family: 'Raleway', sans-serif;
+    @include font-size(1.8, 2.4);
+    flex-shrink: 0;
+    @include vertical-grad($secondary, $primary);
+    @include border-radius(5px);
+    color: #fff;
+  }
+}

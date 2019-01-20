@@ -1,11 +1,49 @@
 html {
-  font-size: 62.5%; // Resets font size to 10px
+	font-size: 62.5%;
+
+  @media #{$tablet} {
+    font-size: 50%;
+  }
+
+  @media #{$tablet} {
+    font-size: 62.5%;
+  }
 }
 
 body {
   background: #ecf0f1;
   font-family: 'Raleway', sans-serif;
+  @include font-size(1.8, 2.4);
   color: $body;
+
+  @media #{$phone} {
+    @include font-size(1.6, 2.2);
+  }
+}
+.container {
+  width: 90%;
+  @include rems(max-width, 120);
+  margin: 0 auto;
+
+  &.ultra {
+    @include rems(padding, 10, 0);
+
+    @media #{$tablet} {
+      @include rems(padding, 8, 0);
+    }
+
+    @media #{$phone} {
+      @include rems(padding, 2, 0);
+    }
+  }
+
+  &.no-top {
+    padding-top: 0;
+  }
+}
+.page-content {
+  width: 100%;
+  overflow: hidden;
 }
 
 #accordion > div {

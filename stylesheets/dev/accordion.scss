@@ -1,0 +1,28 @@
+.accordion {
+  .accordion-trigger {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    @include rems(padding, 1, 0);
+    color: $body;
+    text-decoration: none;
+    @include angle-down;
+
+    &:before {
+      float: right;
+      color: $primary;
+      transition: 0.4s all ease;
+    }
+
+    &.active {
+      color: $primary;
+
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .accordion-content {
+    @include rems(margin, 2, 0);
+  }
+}

@@ -1,0 +1,31 @@
+header {
+  @include box;
+  background: #fff;
+  border-bottom: 2px solid $primary;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+          box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+
+  @media #{$phone} {
+    position: static;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media #{$phone} {
+      justify-content: center;
+    }
+  }
+
+  h2 {
+    color: $primary;
+    @include font-size(6, 6);
+    @include rems(margin, 1, 0);
+  }
+}

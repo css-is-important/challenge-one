@@ -1,0 +1,25 @@
+.angle-block {
+  background: $primary;
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: $primary;
+    @include rems(height, 20);
+    @include rems(left, -10);
+    @include rems(right, -10);
+    z-index: -1;
+  }
+
+  &:before {
+    @include rems(top, -10);
+    transform: rotate(5deg);
+  }
+
+  &:after {
+    @include rems(bottom, -10);
+    transform: rotate(-5deg);
+  }
+}

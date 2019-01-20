@@ -1,0 +1,53 @@
+.bx-pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include rems(bottom, 2);
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    @include rems(margin, 0, 0.5);
+    a {
+      display: block;
+      @include rems(width, 1);
+      @include rems(height, 1);
+      @include border-radius(50%);
+      text-indent: -10000px;
+      border: 2px solid $primary;
+      transition: 0.4s all ease;
+      @include box;
+
+      &.active, &:hover {
+        background: $primary;
+      }
+    }
+  }
+}
+
+.bx-next, .bx-prev {
+  position: absolute;
+  top: 50%;
+  @include rems(padding, 1);
+  @include box;
+  @include rems(width, 4);
+  @include rems(height, 4);
+  @include rems(margin-top, -2);
+  background: $primary;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media #{$phone} {
+    display: none;
+  }
+}
+
+.bx-prev {
+  left: 0;
+}
+.bx-next {
+  right: 0;
+}

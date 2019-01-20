@@ -1,0 +1,32 @@
+.tab-triggers {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  @include rems(margin-bottom, 5);
+
+  @media #{$tablet} {
+    @include rems(margin-bottom, 4);
+  }
+
+  @media #{$phone} {
+    @include rems(margin-bottom, 2);
+  }
+
+  li {
+    a {
+      @include rems(padding, 0.5, 1);
+      color: $body;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      @include box;
+      display: block;
+
+      &:hover, &.active {
+        border-bottom: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        color: $primary;
+      }
+    }
+  }
+}

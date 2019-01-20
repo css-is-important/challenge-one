@@ -1,0 +1,122 @@
+.pricing-table {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+
+  @media #{$phone} {
+    flex-direction: column;
+    @include rems(padding-top, 3);
+  }
+
+  .pricing-option {
+    width: 100%;
+		text-align: center;
+		border: 1px solid #ccc;
+		background: #fff;
+		@include rems(padding, 2, 0);
+		margin-left: -1px;
+
+    @media #{$phone} {
+      @include rems(margin, 0, 0, 4);
+    }
+
+    .pricing-icon {
+      margin: 0 auto;
+      @include rems(margin-top, -6);
+      @include rems(margin-bottom, 2);
+      @include rems(width, 8);
+      @include rems(height, 8);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary;
+      @include font-size(4, 4);
+      border: 4px solid #fff;
+      @include border-radius(50%);
+      position: relative;
+      -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+              box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+
+      @media #{$phone} {
+        @include rems(height, 6);
+        @include rems(width, 6);
+        @include font-size(2, 2);
+        @include rems(margin-top, -5);
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        @include border-radius(50%);
+        -webkit-box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.5);
+                box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.5);
+      }
+    }
+
+    &:first-child {
+			@include border-radius(10px 0 0 10px);
+			border-left: 1px solid #ccc;
+
+      @media #{$phone} {
+        @include border-radius(10px);
+      }
+		}
+		&:last-child {
+			@include border-radius(0 10px 10px 0);
+			border-right: 1px solid #ccc;
+
+      @media #{$phone} {
+        margin-bottom: 0;
+        @include border-radius(10px);
+      }
+		}
+
+    &.featured {
+			position: relative;
+			z-index: 5;
+			@include border-radius(10px);
+			border: 1px solid #ccc;
+			@include rems(margin, 0, -1);
+      @include rems(padding, 4, 0);
+			-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+					    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+
+      @media #{$phone} {
+        @include rems(padding, 2, 0);
+        @include rems(margin, 0, 0, 4);
+      }
+
+      .pricing-icon {
+        @include rems(margin-top, -8);
+
+        @media #{$phone} {
+          @include rems(margin-top, -5);
+        }
+      }
+		}
+  }
+
+  ul {
+    @include rems(padding, 0, 2);
+    margin: 0;
+    li {
+      border-bottom: 1px solid $primary;
+      @include rems(padding, 1);
+      background: none;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

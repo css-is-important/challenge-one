@@ -1,0 +1,22 @@
+.diamond {
+  margin: 0 auto;
+  @include rems(width, 10);
+  @include rems(height, 10);
+  background: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  @include font-size(6, 6);
+  transform: rotate(45deg);
+
+  @media #{$phone} {
+    @include rems(width, 4);
+    @include rems(height, 4);
+    @include font-size(2, 2);
+  }
+
+  i, svg {
+    transform: rotate(-45deg);
+  }
+}
