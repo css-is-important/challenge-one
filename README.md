@@ -23,7 +23,7 @@ Actually there is another rule... Everything you do must be done in CSS. No java
 - Clone the repo to your computer
 - Run `npm install`
 - Run `grunt`
-- If you get a `grunt-contrib-sass PATH` error, run `sudo gem install sass` and run `grunt` again
+  - If you get a `grunt-contrib-sass PATH` error, run `sudo gem install sass` and run `grunt` again
 - The page will run at `localhost:9000`
 ## Taking part
 - Create a `entries/your-name` branch from `master`
